@@ -4,7 +4,7 @@
   "description": "Cryptographic boundaries for separating untrusted LLM content from trusted instructions and tool execution.",
   "type": "module",
   "license": "MIT",
-  "packageManager": "pnpm@11.19.0",
+  "packageManager": "pnpm@10.34.0",
   "engines": {
     "node": ">=20"
   },
