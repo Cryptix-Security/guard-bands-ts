@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v0.1.0 - 2026-08-16
+
 - Added a Node.js/TypeScript implementation of Guard Bands protocol v2 with
   RFC 8785/JCS canonicalization, HMAC-SHA256, Ed25519, inline text bands,
   detached JSON envelopes, and legacy v1 verification for the portable subset.
