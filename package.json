@@ -1,0 +1,71 @@
+{
+  "name": "@guardbands/core",
+  "version": "0.1.0",
+  "description": "Cryptographic boundaries for separating untrusted LLM content from trusted instructions and tool execution.",
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "conformance",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./mcp": {
+      "types": "./dist/mcp.d.ts",
+      "import": "./dist/mcp.js"
+    }
+  },
+  "scripts": {
+    "biome:check": "biome check .",
+    "build": "tsc -p tsconfig.json",
+    "check": "pnpm biome:check && pnpm typecheck && pnpm test",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint": "biome lint .",
+    "prepare": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json --noEmit"
+  },
+  "peerDependencies": {
+    "@modelcontextprotocol/client": ">=2 <3",
+    "@modelcontextprotocol/server": ">=2 <3"
+  },
+  "peerDependenciesMeta": {
+    "@modelcontextprotocol/client": {
+      "optional": true
+    },
+    "@modelcontextprotocol/server": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": ">=2 <3",
+    "@modelcontextprotocol/client": "^2.0.0",
+    "@modelcontextprotocol/server": "^2.0.0",
+    "@types/node": ">=20 <25",
+    "typescript": ">=5.8 <6",
+    "vitest": ">=3 <5",
+    "zod": ">=4 <5"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cryptix-Security/guard-bands-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cryptix-Security/guard-bands-ts/issues"
+  },
+  "homepage": "https://guardbands.com/"
+}
