@@ -73,6 +73,8 @@ pnpm check
 pnpm build
 ```
 
-The CI matrix runs on Node.js 20, 22, and 24. This repository is pre-1.0 and
-should receive independent cryptographic/protocol review before a stable
-release.
+The CI matrix runs on Node.js 20, 22, and 24. This repository is pre-1.0, and a
+stable release is blocked on the joint Python/TypeScript
+[independent review gate](https://github.com/Cryptix-Security/guard-bands/blob/main/docs/EXTERNAL_REVIEW.md).
+Review progress is tracked in
+[Cryptix-Security/guard-bands#31](https://github.com/Cryptix-Security/guard-bands/issues/31).
