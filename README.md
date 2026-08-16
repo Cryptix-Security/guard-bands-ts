@@ -17,7 +17,7 @@ a data boundary; it does not grant authority or replace normal authorization.
 ## Install from source
 
 ```bash
-pnpm add github:Cryptix-Security/guard-bands-ts
+pnpm add github:Cryptix-Security/guard-bands-ts#v0.1.0
 ```
 
 Node.js 20 or later is required.
