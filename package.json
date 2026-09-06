@@ -51,8 +51,8 @@
     "@biomejs/biome": ">=2 <3",
     "@modelcontextprotocol/client": "^2.0.0",
     "@modelcontextprotocol/server": "^2.0.0",
-    "@types/node": ">=20 <25",
-    "typescript": ">=5.8 <6",
+    "@types/node": ">=20 <27",
+    "typescript": ">=5.8 <8",
     "vitest": ">=3 <5",
     "zod": ">=4 <5"
   },
